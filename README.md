@@ -1,28 +1,14 @@
 # Enkodeng project
 
 - [Enkodeng project](#enkodeng-project)
-  - [Tasks](#tasks)
-  - [Stack](#stack)
+  - [Задачи](#задачи)
   - [Usage](#usage)
 
-## Tasks
+## Задачи
 
-Stylize components according the design layout
+Стилизуйте компоненты согласно дизайн-макету.
 
-## Stack
-
-- React
-- TypeScript
-- Redux
-- Redux-Saga
-- Storybook
-- Styled Components
-  
-### Misc
-
-- Feature driven development
-- Atomic design
-- Eslint + Prettier
+Дизайн-макет: https://www.figma.com/file/HbaePNYYfSLoizyVOKDevM/Toduber?node-id=0%3A175
 
 ## Usage
 
