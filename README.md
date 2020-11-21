@@ -7,24 +7,7 @@
 
 ## Tasks
 
-Add components with stories
-
-- [ ] Home page component
-  - [x] Todo list
-    - [x] Todo item
-      - [x] Checkbox
-      - [x] Delete todo button (with icon)
-  - [x] Link to settings page (with icon)
-  - [x] Heading
-  - [x] Add todo form
-    - [x] Add todo button (with icon)
-    - [x] New todo input
-    - [x] Submit new todo button 
-  - [x] Todos skeleton
-- [ ] Settings page
-  - [ ] Link to home page (with icon)
-  - [ ] Setting item
-    - [ ] Setting switch
+Stylize components according the design layout
 
 ## Stack
 
