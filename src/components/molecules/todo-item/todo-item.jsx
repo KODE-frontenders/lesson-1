@@ -1,5 +1,5 @@
 import React from "react";
-import { TTodo } from "types";
+import { TTodo } from "shared/types";
 import { func } from "prop-types";
 import { Checkbox } from "components/atoms/checkbox/checkbox";
 import { TodoDeleteButton } from "components/molecules/todo-delete-button/todo-delete-button";

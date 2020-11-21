@@ -2,8 +2,8 @@ import React from "react";
 import { render } from "react-dom";
 import { ThemeProvider } from "styled-components";
 
-import { darkTheme, lightTheme } from "./theme";
-import { useDarkMode } from "shared/hooks/useDarkMode";
+import { darkTheme, lightTheme } from "./shared/theme";
+import { useDarkMode } from "shared/hooks/use-dark-mode";
 import { GlobalStyles } from "components/atoms/global-styles/global-styles";
 import { SettingsPage } from "components/pages/settings-page/settings-page";
 import { TodosPage } from "components/pages/todos-page/todos-page";

@@ -1,6 +1,6 @@
 import React from "react";
 import { TodoAddButton } from "./todo-add-button";
-import { darkTheme, lightTheme } from "theme";
+import { darkTheme, lightTheme } from "shared/theme";
 
 export default {
   title: "Molecules/TodoAddButton",
