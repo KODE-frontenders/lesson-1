@@ -1,21 +1,25 @@
-const blueColor = "#006CFF";
-const dimmedBlueColor = "#B2D2FF";
-const whiteColor = "#FFFFFF";
-const lightGrayColor = "#DADADA";
-const grayColor = "#777777";
-const darkGrayColor = "#333333";
+export const colors = {
+  blueColor: "#006CFF",
+  dimmedBlueColor: "#B2D2FF",
+  whiteColor: "#FFFFFF",
+  lightGrayColor: "#DADADA",
+  grayColor: "#777777",
+  darkGrayColor: "#333333",
+};
 
 
 export const lightTheme = {
-         text: darkGrayColor,
-         background: whiteColor,
-         primary: blueColor,
-         secondary: lightGrayColor,
+         text: colors.darkGrayColor,
+         background: colors.whiteColor,
+         primary: colors.blueColor,
+         secondary: colors.lightGrayColor,
+         colors,
        };
 
 export const darkTheme = {
-         text: whiteColor,
-         background: darkGrayColor,
-         primary: dimmedBlueColor,
-         secondary: grayColor,
+         text: colors.whiteColor,
+         background: colors.darkGrayColor,
+         primary: colors.dimmedBlueColor,
+         secondary: colors.grayColor,
+         colors,
        };
