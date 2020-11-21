@@ -1,21 +1,20 @@
 import React from "react";
 import { ReactComponent as PlusIcon } from "shared/icons/plus-icon.svg";
-import styled, { ThemeContext } from "styled-components";
+import styled from "styled-components";
 
 const StyledButton = styled.button`
+  color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.background};
+  box-shadow: 0px 16px 16px ${({ theme }) => theme.colors.shadow};
+  padding: ${({ theme }) => theme.sizeGrid.double}px;
   line-height: 1;
-  padding: ${(props) => props.size}px;
-  margin: ${(props) => props.size}px;
   border-radius: 50%;
   border: none;
-  box-shadow: 0px 24px 32px ${(props) => props.theme.colors.darkGray};
 `;
 
 export const TodoAddButton = ({ onToggle }) => {
-  const theme = React.useContext(ThemeContext);
-
   return (
-    <StyledButton type="button" theme={theme} size={16} onClick={onToggle}>
+    <StyledButton type="button" onClick={onToggle}>
       <PlusIcon />
     </StyledButton>
   );
