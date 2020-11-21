@@ -1,5 +1,5 @@
 import React from "react";
-import { TodoAddModal } from "components/molecules/todo-add-modal/todo-add-modal";
+import { TodoAddModal } from "components/organisms/todo-add-modal/todo-add-modal";
 import { TodoAddButton } from "components/molecules/todo-add-button/todo-add-button";
 
 export const TodosAdd = () => {

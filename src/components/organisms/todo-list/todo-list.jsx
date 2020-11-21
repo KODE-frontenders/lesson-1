@@ -1,7 +1,7 @@
 import React from "react";
 import { TodoItem } from "../../molecules/todo-item/todo-item";
 import { TTodos } from "types";
-import { ReactComponent as TodosSkeleton } from "icons/todos-skeleton.svg";
+import { ReactComponent as TodosSkeleton } from "shared/icons/todos-skeleton.svg";
 import PropTypes from "prop-types";
 
 /**

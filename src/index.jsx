@@ -3,7 +3,7 @@ import { render } from "react-dom";
 import { ThemeProvider } from "styled-components";
 
 import { darkTheme, lightTheme } from "./theme";
-import { useDarkMode } from 'hooks/useDarkMode';
+import { useDarkMode } from "shared/hooks/useDarkMode";
 import { GlobalStyles } from "components/atoms/global-styles/global-styles";
 import { SettingsPage } from "components/pages/settings-page/settings-page";
 import { TodosPage } from "components/pages/todos-page/todos-page";
@@ -20,8 +20,8 @@ const Root = () => {
   return (
     <React.StrictMode>
       <ThemeProvider theme={themeStyles}>
-          {/* TODO: add router */}
           <GlobalStyles />
+          {/* TODO: add router */}
           <TodosPage />
           <SettingsPage toggleTheme={toggleTheme}/>
       </ThemeProvider>

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { ReactComponent as HomeIcon } from "icons/home-icon.svg";
-import { ReactComponent as SettingsIcon } from "icons/settings-icon.svg";
+import { ReactComponent as HomeIcon } from "shared/icons/home-icon.svg";
+import { ReactComponent as SettingsIcon } from "shared/icons/settings-icon.svg";
 
 // TODO: move to component constants
 const ROUTES_ICONS_MAP = {
