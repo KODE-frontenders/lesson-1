@@ -4,12 +4,13 @@ import { Header } from "components/templates/header/header";
 import { Body } from "components/templates/body/body";
 
 const PageWrapper = styled.div`
+  padding: ${({ theme }) => theme.sizeGrid.double}px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   height: 100vh;
   overflow-y: hidden;
   width: 100%;
-  padding: ${({ theme }) => theme.sizeGrid.double}px;
 `;
 
 export const PageTemplate = ({ children, title, linkTo }) => {

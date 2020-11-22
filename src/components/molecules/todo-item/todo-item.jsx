@@ -12,7 +12,7 @@ const StyledListItem = styled.li`
   align-items: center;
   justify-content: space-between;
   position: relative;
-  border-bottom: 1px solid ${({ theme }) => theme.colors.palette.lightGrayColor};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
 `;
 
 const StyledLabel = styled.label`
@@ -23,6 +23,8 @@ const StyledLabel = styled.label`
 
 const StyledSpan = styled.span`
   margin-left: ${({ theme }) => theme.sizeGrid.base}px;
+  color: ${({ isDone, theme }) => isDone && theme.colors.gray};
+  text-decoration: ${({ isDone }) => isDone && "line-through"};
 `;
 
 export const TodoItem = ({ todo, toggleTodoAction, deleteTodoAction }) => {
@@ -36,8 +38,8 @@ export const TodoItem = ({ todo, toggleTodoAction, deleteTodoAction }) => {
   return (
     <StyledListItem>
       <StyledLabel>
-        <Checkbox completed={todo.completed} onToggle={onToggleHandler} />
-        <StyledSpan>{todo.title}</StyledSpan>
+        <Checkbox isDone={todo.isDone} onToggle={onToggleHandler} />
+        <StyledSpan isDone={todo.isDone}>{todo.title}</StyledSpan>
       </StyledLabel>
 
       <TodoDeleteButton onDelete={onDeleteHandler} />

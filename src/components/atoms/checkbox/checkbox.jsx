@@ -12,14 +12,14 @@ const StyledInput = styled.input.attrs((props) => ({
     width: ${({ theme }) => theme.sizeGrid.double}px;
     height: ${({ theme }) => theme.sizeGrid.double}px;
     border-color: ${({ checked, theme }) =>
-      checked ? theme.colors.primary : theme.colors.palette.grayColor};
+      checked ? theme.colors.primary : theme.colors.gray};
     background-color: ${({ checked, theme }) =>
       checked ? theme.colors.primary : "transparent"};
+    color: ${({ theme }) => theme.colors.background};
 
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     font-size: 14px;
     border-radius: 50%;
     border-width: 2px;
@@ -31,11 +31,11 @@ const StyledInput = styled.input.attrs((props) => ({
   }
 `;
 
-export const Checkbox = ({ completed, onToggle }) => (
-         <StyledInput type="checkbox" checked={completed} onChange={onToggle} />
-       );
+export const Checkbox = ({ isDone, onToggle }) => (
+  <StyledInput type="checkbox" checked={isDone} onChange={onToggle} />
+);
 
 Checkbox.propTypes = {
-  completed: PropTypes.bool.isRequired,
+  isDone: PropTypes.bool.isRequired,
   onToggle: PropTypes.func.isRequired,
 };

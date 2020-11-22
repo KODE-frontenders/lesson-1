@@ -5,9 +5,10 @@ import styled from "styled-components";
 const StyledButton = styled.button`
   color: ${({ theme }) => theme.colors.primary};
   background-color: ${({ theme }) => theme.colors.background};
-  box-shadow: 0px 16px 16px ${({ theme }) => theme.colors.shadow};
+  box-shadow: 0px 8px 16px 4px ${({ theme }) => theme.colors.shadow};
   padding: ${({ theme }) => theme.sizeGrid.double}px;
   margin: ${({ theme }) => theme.sizeGrid.double}px;
+  transition: transform ease-in-out 0.13s, box-shadow ease-out 0.13s;
   line-height: 1;
   border-radius: 50%;
   border: none;
@@ -16,8 +17,8 @@ const StyledButton = styled.button`
   right: 0;
 
   &:hover {
-    box-shadow: 0px 32px 32px ${({ theme }) => theme.colors.shadow},
-      inset 0px 0px 8px 4px ${({ theme }) => theme.colors.shadow};
+    box-shadow: 0px 8px 20px 4px ${({ theme }) => theme.colors.shadow};
+    transform: scale(103%);
   }
 `;
 

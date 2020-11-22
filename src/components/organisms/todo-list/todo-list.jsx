@@ -3,6 +3,11 @@ import { TodoItem } from "../../molecules/todo-item/todo-item";
 import { TTodos } from "shared/types";
 import { ReactComponent as TodosSkeleton } from "shared/icons/todos-skeleton.svg";
 import PropTypes from "prop-types";
+import styled from "styled-components";
+
+const StyledSkeleton = styled(TodosSkeleton)`
+  color: ${({ theme }) => theme.colors.gray};
+`;
 
 /**
  *
@@ -11,7 +16,7 @@ import PropTypes from "prop-types";
  */
 export const TodoList = ({ todos, isLoading }) => {
   if (isLoading) {
-    return <TodosSkeleton />;
+    return <StyledSkeleton />;
   }
 
   if (todos.length === 0) {

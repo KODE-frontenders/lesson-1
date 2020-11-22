@@ -10,14 +10,14 @@ const Template = (args) => <TodoItem {...args} />;
 
 export const Basic = Template.bind({});
 Basic.args = {
-  todo: { id: "sdtnst", title: "test", completed: false },
+  todo: { id: "sdtnst", title: "test", isDone: false },
   toggleTodoAction: () => {},
   deletoTodoAction: () => {},
 };
 
-export const Completed = Template.bind({});
-Completed.args = {
-  todo: { id: "sdtnst", title: "test", completed: true },
+export const isDone = Template.bind({});
+isDone.args = {
+  todo: { id: "sdtnst", title: "test", isDone: true },
   toggleTodoAction: () => {},
   deletoTodoAction: () => {},
 };

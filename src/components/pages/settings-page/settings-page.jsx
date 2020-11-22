@@ -1,17 +1,28 @@
 import React from "react";
-import { ToggleSwitch } from "components/atoms/toggle-switch/toggle-switch";
+import { ThemeSwitch } from "components/atoms/theme-switch/theme-switch";
 import { PageTemplate } from "components/templates/page/page";
+import styled from "styled-components";
+
+const StyledListItem = styled.li`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const StyledUnorderedList = styled.ul`
+  padding: 0;
+`;
+
 
 export const SettingsPage = ({ toggleTheme }) => {
   return (
     <>
       <PageTemplate title="Settings" linkTo="todos">
-        <ul>
-          <li>
+        <StyledUnorderedList>
+          <StyledListItem>
             <span>Theme</span>
-            <ToggleSwitch toggleTheme={toggleTheme}  />
-          </li>
-        </ul>
+            <ThemeSwitch toggleTheme={toggleTheme} />
+          </StyledListItem>
+        </StyledUnorderedList>
       </PageTemplate>
     </>
   );
