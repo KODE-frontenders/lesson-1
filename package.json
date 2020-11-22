@@ -1,8 +1,8 @@
 {
   "name": "enkodeng-project-for-kode-internship",
-  "description": "enkodeng-lesson-1",
-  "version": "0.1.0",
-  "author": "Martyn <mrtnsn.dev@gmail.com> (https://someta.site)",
+  "description": "enkodeng-lesson-3",
+  "version": "0.3.0",
+  "author": "Martyn <vm@kode.ru> (https://someta.site)",
   "repository": "https://github.com/martyns0n/enkodeng-project.git",
   "license": "MIT",
   "main": "src/index.jsx",
