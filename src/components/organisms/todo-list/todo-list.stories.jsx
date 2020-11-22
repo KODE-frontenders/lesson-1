@@ -4,6 +4,11 @@ import { TodoList } from "./todo-list";
 export default {
   title: "Organisms/TodoList",
   component: TodoList,
+  parameters: {
+    actions: {
+      handles: ["click"],
+    },
+  },
 };
 
 const Template = (args) => <TodoList {...args} />;
@@ -38,7 +43,7 @@ SeveralItems.args = {
       id: "stn*&ds*t^d",
     },
     {
-      title: "stnstn stnstn stnstnstnt",
+      title: "veeeeerryyyyy loooooong todoooooo, soooooooooo ...... ",
       isDone: false,
       id: "stnds*t&n^d",
     },
