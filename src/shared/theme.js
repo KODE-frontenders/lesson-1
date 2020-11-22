@@ -1,4 +1,4 @@
-const colors = {
+const palette = {
   blueColor: "#006CFF",
   dimmedBlueColor: "#B2D2FF",
   whiteColor: "#FFF",
@@ -6,7 +6,6 @@ const colors = {
   grayColor: "#777",
   darkGrayColor: "#333",
   trasparentBlackColor: "#0005",
-
 };
 
 const sizeGrid = {
@@ -21,25 +20,25 @@ const sizeGrid = {
 };
 
 export const lightTheme = {
-                colors: {
-                  text: colors.darkGrayColor,
-                  background: colors.whiteColor,
-                  primary: colors.blueColor,
-                  secondary: colors.lightGrayColor,
-                  shadow: colors.trasparentBlackColor,
-                  colors,
-                },
-                sizeGrid,
-              };
+         colors: {
+           text: palette.darkGrayColor,
+           background: palette.whiteColor,
+           primary: palette.blueColor,
+           secondary: palette.dimmedBlueColor,
+           shadow: palette.trasparentBlackColor,
+           palette,
+         },
+         sizeGrid,
+       };
 
 export const darkTheme = {
-                colors: {
-                  text: colors.whiteColor,
-                  background: colors.darkGrayColor,
-                  primary: colors.dimmedBlueColor,
-                  secondary: colors.grayColor,
-                  shadow: colors.trasparentBlackColor,
-                  colors,
-                },
-                sizeGrid,
-              };
+         colors: {
+           text: palette.whiteColor,
+           background: palette.darkGrayColor,
+           primary: palette.dimmedBlueColor,
+           secondary: palette.grayColor,
+           shadow: palette.trasparentBlackColor,
+           palette,
+         },
+         sizeGrid,
+       };
