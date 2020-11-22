@@ -3,6 +3,7 @@ import React from "react";
 import { lightTheme, darkTheme } from "shared/theme";
 import { createMemoryHistory } from "history";
 import { Router, Route } from "react-router-dom";
+import { GlobalStyles } from "components/atoms/global-styles/global-styles";
 
 const history = createMemoryHistory({ initialEntries: ["/"] });
 
@@ -19,23 +20,24 @@ export const globalTypes = {
 };
 
 export const decorators = [
-  (Story, { globals }) => {
-    const themeStyles =
-      globals.theme === "light" ? lightTheme : darkTheme;
-    return (
-      <ThemeProvider theme={themeStyles}>
-        <Story />
-      </ThemeProvider>
-    );
-  },
-  (Story) => (
-    <Router history={createMemoryHistory({ initialEntries: ["/"] })}>
-      <Route path="/">
-        <Story />
-      </Route>
-    </Router>
-  ),
-];
+         (Story, { globals }) => {
+           const themeStyles =
+             globals.theme === "light" ? lightTheme : darkTheme;
+           return (
+             <ThemeProvider theme={themeStyles}>
+               <GlobalStyles />
+               <Story />
+             </ThemeProvider>
+           );
+         },
+         (Story) => (
+           <Router history={createMemoryHistory({ initialEntries: ["/"] })}>
+             <Route path="/">
+               <Story />
+             </Route>
+           </Router>
+         ),
+       ];
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
