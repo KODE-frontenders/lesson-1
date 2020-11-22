@@ -1,7 +1,10 @@
 import { createGlobalStyle } from "styled-components";
+import { normalize } from "styled-normalize";
 import "fontsource-roboto";
 
 export const GlobalStyles = createGlobalStyle`
+  ${normalize}
+  
   body {
     background: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.text};
