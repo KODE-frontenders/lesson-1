@@ -5,8 +5,7 @@ import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./shared/theme";
 import { useDarkMode } from "shared/hooks/use-dark-mode";
 import { GlobalStyles } from "components/atoms/global-styles/global-styles";
-import { SettingsPage } from "components/pages/settings-page/settings-page";
-import { TodosPage } from "components/pages/todos-page/todos-page";
+import { Routing } from "components/organisms/routing/routing"
 
 const Root = () => {
   const [theme, toggleTheme, componentMounted] = useDarkMode();
@@ -20,13 +19,11 @@ const Root = () => {
   return (
     <React.StrictMode>
       <ThemeProvider theme={themeStyles}>
-          <GlobalStyles />
-          {/* TODO: add router */}
-          <TodosPage />
-          <SettingsPage toggleTheme={toggleTheme}/>
+        <GlobalStyles />
+        <Routing toggleTheme={toggleTheme}  />
       </ThemeProvider>
     </React.StrictMode>
-  )
+  );
 }
 
 render(<Root />, document.getElementById("root"));
