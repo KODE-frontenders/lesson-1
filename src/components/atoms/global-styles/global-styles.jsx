@@ -6,6 +6,9 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.text};
     font-family: Roboto, sans-serif;
+    font-size: 18px;
+    line-height: 1.33;
+    
     transition: all 0.50s linear;
   }
 `;
