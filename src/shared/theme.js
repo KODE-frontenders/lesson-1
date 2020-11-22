@@ -20,25 +20,29 @@ const sizeGrid = {
 };
 
 export const lightTheme = {
-         colors: {
-           text: palette.darkGrayColor,
-           background: palette.whiteColor,
-           primary: palette.blueColor,
-           secondary: palette.dimmedBlueColor,
-           shadow: palette.trasparentBlackColor,
-           palette,
-         },
-         sizeGrid,
-       };
+  mode: "light",
+  colors: {
+    text: palette.darkGrayColor,
+    background: palette.whiteColor,
+    primary: palette.blueColor,
+    secondary: palette.dimmedBlueColor,
+    gray: palette.lightGrayColor,
+    shadow: palette.trasparentBlackColor,
+    palette,
+  },
+  sizeGrid,
+};
 
 export const darkTheme = {
-         colors: {
-           text: palette.whiteColor,
-           background: palette.darkGrayColor,
-           primary: palette.dimmedBlueColor,
-           secondary: palette.grayColor,
-           shadow: palette.trasparentBlackColor,
-           palette,
-         },
-         sizeGrid,
-       };
+  mode: "dark",
+  colors: {
+    text: palette.whiteColor,
+    background: palette.darkGrayColor,
+    primary: palette.dimmedBlueColor,
+    secondary: palette.grayColor,
+    gray: palette.grayColor,
+    shadow: palette.trasparentBlackColor,
+    palette,
+  },
+  sizeGrid,
+};
