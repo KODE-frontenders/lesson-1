@@ -18,15 +18,19 @@ const StyledActionButton = styled.button`
 `;
 
 const StyledInput = styled.input`
-  padding: ${({ theme }) => theme.sizeGrid.triple}px;
+  background-color: ${({ theme }) => theme.colors.background};
+  margin: ${({ theme }) => theme.sizeGrid.triple}px;
+  caret-color: ${({ theme }) => theme.colors.primary};
   border: none;
   outline: none;
+  font-size: 18px;
 
   &::placeholder {
     color: ${({ theme }) => theme.colors.gray};
+    background-color: ${({ theme }) => theme.colors.background};
     font-size: 18px;
   }
-`
+`;
 
 export const TodoAddForm = ({ onCancel, onSubmit }) => {
   const [todoInputValue, setTodoInputValue] = React.useState("");
@@ -56,9 +60,7 @@ export const TodoAddForm = ({ onCancel, onSubmit }) => {
         <StyledActionButton type="button" onClick={onCancelHandler}>
           Cancel
         </StyledActionButton>
-        <StyledActionButton type="submit">
-          Done
-        </StyledActionButton>
+        <StyledActionButton type="submit">Done</StyledActionButton>
       </StyledActionButtonsWrapper>
 
       <RowSpaceBetween>
@@ -69,10 +71,11 @@ export const TodoAddForm = ({ onCancel, onSubmit }) => {
             value={todoInputValue}
             onChange={onChangeHandler}
             placeholder="What do you want to do?"
+            autoFocus
           />
         </Row>
 
-        <TodoDeleteButton onClick={onCancelHandler}/>
+        <TodoDeleteButton onClick={onCancelHandler} />
       </RowSpaceBetween>
     </form>
   );

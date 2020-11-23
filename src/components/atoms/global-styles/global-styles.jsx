@@ -12,6 +12,6 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 18px;
     line-height: 1.33;
     
-    transition: all 0.50s linear;
+    transition: background 0.50s ease-out;
   }
 `;

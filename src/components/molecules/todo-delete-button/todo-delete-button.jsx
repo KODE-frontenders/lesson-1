@@ -8,7 +8,9 @@ const StyledButton = styled.button`
   background-color: ${({ theme }) => theme.colors.background};
   padding: ${({ theme }) => theme.sizeGrid.base}px;
   color: ${({ theme }) => theme.colors.secondary};
+  padding-right: 0; 
   line-height: 1;
+  transition: color ease-out 0.13s;
 
   &:hover {
     color: ${({ theme }) => theme.colors.primary};
