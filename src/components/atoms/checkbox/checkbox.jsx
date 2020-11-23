@@ -25,10 +25,6 @@ const StyledInput = styled.input.attrs((props) => ({
     border-width: 2px;
     border-style: solid;
   }
-
-  &::before {
-    content: ${({ checked }) => (checked ? "da" : "net")};
-  }
 `;
 
 export const Checkbox = ({ isDone, onToggle }) => (
